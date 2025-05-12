@@ -63,7 +63,7 @@ function createGrid() {
         input.maxLength = 1;
         input.dataset.row = r;
         input.dataset.col = c;
-        input.addEventListener("input", checkAnswers);
+  
         cell.appendChild(input);
 
         const key = `${r},${c}`;
