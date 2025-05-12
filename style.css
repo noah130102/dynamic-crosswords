@@ -1,20 +1,27 @@
 body {
   font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  background: linear-gradient(to right, rgba(218, 218, 218, 0.8), rgba(140, 124, 143, 0.8)),
+              url('https://img.freepik.com/premium-photo/ballpoint-pen-background-crossword-puzzle-sheet-contoured-sunlight_420001-11541.jpg') no-repeat center center fixed;
+  background-size: cover;
   padding: 2rem;
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  backdrop-filter: blur(3px);
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
-  color: #222;
+  color: rgb(0, 0, 0);
   text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  font-weight: 700;
 }
+
 
 .puzzle-container {
   display: flex;
@@ -61,8 +68,8 @@ h1 {
 }
 
 .cell input:focus {
-  background-color: #e0f7fa;
-  outline: 2px solid #2196f3;
+  background-color: #dfdede;
+  outline: 1.5px solid #000000;
 }
 
 .black {
@@ -113,7 +120,7 @@ button {
   margin-top: 2rem;
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
-  background: linear-gradient(to right, #4caf50, #66bb6a);
+  background: linear-gradient(to right, #5f5a5a, #0f100f);
   color: white;
   border: none;
   border-radius: 8px;
@@ -123,7 +130,7 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(to right, #43a047, #66bb6a);
+  background: linear-gradient(to right, #3e3f3e, #363f36);
   transform: translateY(-2px);
 }
 
